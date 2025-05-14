@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    article, aside {
+      margin: 20px auto;
+      max-width: 600px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+
+<article>
+  <h2>Submit Your Feedback</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</article>
+
+<aside>
+  <h3>What are localStorage and sessionStorage?</h3>
+  <p>
+    <strong>localStorage</strong> and <strong>sessionStorage</strong> are web storage mechanisms in HTML5 that allow websites to store data in the browser.
+  </p>
+  <ul>
+    <li><strong>localStorage:</strong> Stores data with no expiration time. The data is saved across browser sessions and only cleared when explicitly deleted by the user or website.</li>
+    <li><strong>sessionStorage:</strong> Stores data for the duration of the page session. The data is deleted when the browser tab is closed.</li>
+  </ul>
+  <p>These are commonly used to save user preferences, form data, or temporary states without requiring a server.</p>
+</aside>
+
+</body>
+</html>
